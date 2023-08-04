@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class ="msgGen">
+    <header>
+        <h1>Devon L. Smith</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html#about">About</a></li>
+                <li><a href="index.html#project-section">Projects</a></li>
+                <li><a href="msgGen.html">Message Generator</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Random Quote Generator</h1>
+    <div id="quoteDisplay"></div>
+    <button id="generateButton">Generate Quote</button>
+    <script src="msgGen.js"></script>
+    <script>
+        document.getElementById('generateButton').addEventListener('click', function() {
+            const quoteDisplay = document.getElementById('quoteDisplay');
+            quoteDisplay.textContent = quoteResult();
+        });
+    </script>
+</body>
+</html>

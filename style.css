@@ -1,0 +1,229 @@
+/*
+Primary Color: #007BFF (Blue)
+Secondary Color: #6C757D (Gray)
+Background Color: #FFFFFF (White)
+Text Color: #333333 (Dark Gray)
+*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    margin: 20px;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+p {
+    font-family: 'Open Sans';
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px gray;
+    background-color: #FFFFFF; /* Set the background color of the header */
+    z-index: 999; /* Ensure the header is above other elements */
+    background-color: #034748;
+    color: white;
+}
+
+main {
+    margin: 70px 20px 0px 20px; /* Add a margin-top to push the content below the fixed header */
+    z-index: 1; /* Set a higher z-index to keep the main content above the header */
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-left: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans';
+}
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#about h2 {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1 1 70%; /* Adjust this value to set equal widths for the text and image containers */
+}
+
+.about-image {
+    flex: 1 1 30%; /* Adjust this value to set equal widths for the text and image containers */
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px; /* Adjust the value as needed for the desired level of rounding */
+}
+
+#project-section {
+    text-align: center;
+}
+
+#project-section h2 {
+    display: block;
+    text-align: left;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.container {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+}
+
+.container article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.project-images img {
+    width: 100%; /* Make images fill the available space within their containers */
+    max-width: 250px; /* Limit the maximum width of images to 250px */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container p {
+    max-width: 80%;
+    margin: 0 auto; /* Center the paragraph horizontally within the container */
+}
+
+.project-buttons {
+    margin-top: auto;
+    margin-bottom: 10px; /* Align the buttons to the bottom */
+}
+
+#contact {
+    text-align: center;
+    margin-top: 80px; /* Center the contact section */
+}
+
+.contact-info {
+    font-size: 14px; /* Adjust the font size to make the contact info smaller */
+}
+
+.interactive {
+    background-color: #D3Acff;
+    color: #FEFEFE;
+}
+.design-system {
+    background-color: #65c7bb;
+    color: #FEFEFE;
+}
+.portfolio {
+    background-color: #5025d1;
+    color: #FEFEFE;
+}
+.project-buttons {
+    margin-top: auto;
+    margin-bottom: 10px; /* Align the buttons to the bottom */
+}
+
+footer {
+
+    color: black;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    margin: 0;
+    padding:0;
+    width: 100% !important;
+}
+.msgGen {
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    text-decoration: none ;
+}
+.msgGen button {
+    margin-top: 20px;
+}
